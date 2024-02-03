@@ -14,14 +14,6 @@ class Counter extends Component {
     })
   }
 
-  startWatch = () => {
-    this.setState(prevState => {
-      setInterval(() => {
-        prevState.count -= 1
-        console.log(prevState.count)
-      }, 1000)
-    })
-  }
   render() {
     const {count} = this.state
     return (
